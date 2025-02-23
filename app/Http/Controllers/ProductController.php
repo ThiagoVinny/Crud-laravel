@@ -10,8 +10,6 @@ use Illuminate\Http\Request;
 use Flash;
 use App\Models\Category;
 
-
-
 class ProductController extends AppBaseController
 {
     /** @var ProductRepository $productRepository*/
@@ -36,16 +34,12 @@ class ProductController extends AppBaseController
     /**
      * Show the form for creating a new Product.
      */
-
     public function create()
     {
-        // Obtém as categorias com pluck, passando os campos 'id' e 'nome'
-        $categories = Category::pluck('nome', 'id');
+        $categories = Category::all(); // Recupera todas as categorias
 
         return view('products.create', compact('categories'));
     }
-
-
 
     /**
      * Store a newly created Product in storage.
@@ -82,11 +76,18 @@ class ProductController extends AppBaseController
      */
     public function edit($id)
     {
-        $product = Product::findOrFail($id);
-        $categories = Category::all();  // Recupera todas as categorias
+        $product = $this->productRepository->find($id);
+
+        if (empty($product)) {
+            Flash::error('Produto não encontrado');
+
+            return redirect(route('products.index'));
+        }
+
+        $categories = Category::all(); // Recupera todas as categorias
+
         return view('products.edit', compact('product', 'categories'));
     }
-
 
     /**
      * Update the specified Product in storage.
@@ -118,14 +119,14 @@ class ProductController extends AppBaseController
         $product = $this->productRepository->find($id);
 
         if (empty($product)) {
-            Flash::error('Produto atualizado com sucesso');
+            Flash::error('Produto não encontrado');
 
             return redirect(route('products.index'));
         }
 
         $this->productRepository->delete($id);
 
-        Flash::success('Produto excluído com sucesso.');
+        Flash::success('Produto Deletado com sucesso.');
 
         return redirect(route('products.index'));
     }

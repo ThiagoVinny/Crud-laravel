@@ -23,7 +23,5 @@
 </div>
 
 <!-- Category Id Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('category_id', 'Categoria:') !!}
-    {!! Form::select('category_id', $categories, null, ['class' => 'form-control', 'required']) !!}
-</div>
+{!! Form::select('category_id', $categories->pluck('nome', 'id'), null, ['class' => 'form-control', 'placeholder' => 'Escolha uma categoria...', 'required']) !!}
+
