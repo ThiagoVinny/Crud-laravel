@@ -7,7 +7,7 @@
                 <th>Descrição:</th>
                 <th>Preço:</th>
                 <th>Quantidade:</th>
-                <th>Categoria:</th> <!-- Alterado para "Categoria" -->
+                <th>Categoria:</th>
                 <th colspan="3">Ação:</th>
             </tr>
             </thead>
@@ -16,9 +16,9 @@
                 <tr>
                     <td>{{ $product->nome }}</td>
                     <td>{{ $product->descricao }}</td>
-                    <td>{{ $product->preco }}</td>
+                    <td>$ {{ number_format($product->preco, 2, ',', '.') }}</td> <!-- Preço formatado -->
                     <td>{{ $product->quantidade }}</td>
-                    <td>{{ $product->category->nome }}</td> <!-- Exibe o nome da categoria -->
+                    <td>{{ $product->category->nome }}</td>
                     <td style="width: 120px">
                         {!! Form::open(['route' => ['products.destroy', $product->id], 'method' => 'delete']) !!}
                         <div class='btn-group'>
