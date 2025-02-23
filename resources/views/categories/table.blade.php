@@ -3,9 +3,9 @@
         <table class="table" id="categories-table">
             <thead>
             <tr>
-                <th>Nome</th>
-                <th>Descrição</th>
-                <th colspan="3">Ação</th>
+                <th>Nome:</th>
+                <th>Descrição:</th>
+                <th colspan="3">Ação:</th>
             </tr>
             </thead>
             <tbody>

@@ -3,12 +3,12 @@
         <table class="table" id="products-table">
             <thead>
             <tr>
-                <th>Nome</th>
-                <th>Descrição</th>
-                <th>Preço</th>
-                <th>Quantidade</th>
-                <th>Categoria</th>
-                <th colspan="3">Ação</th>
+                <th>Nome:</th>
+                <th>Descrição:</th>
+                <th>Preço:</th>
+                <th>Quantidade:</th>
+                <th>Category Id:</th>
+                <th colspan="3">Acão:</th>
             </tr>
             </thead>
             <tbody>

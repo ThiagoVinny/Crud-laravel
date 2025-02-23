@@ -6,7 +6,7 @@
             <div class="row mb-2">
                 <div class="col-sm-12">
                     <h1>
-                    Cradastrar Categorias
+                    Criar Categorias
                     </h1>
                 </div>
             </div>

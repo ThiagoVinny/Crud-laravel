@@ -47,7 +47,7 @@ class CategoryController extends AppBaseController
 
         $category = $this->categoryRepository->create($input);
 
-        Flash::success('Categoria Salva com sucesso.');
+        Flash::success('Categoria salva com sucesso.');
 
         return redirect(route('categories.index'));
     }

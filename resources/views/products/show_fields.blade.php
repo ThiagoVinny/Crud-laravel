@@ -6,13 +6,13 @@
 
 <!-- Descricao Field -->
 <div class="col-sm-12">
-    {!! Form::label('descricao', 'Descricao:') !!}
+    {!! Form::label('descricao', 'Descrição:') !!}
     <p>{{ $product->descricao }}</p>
 </div>
 
 <!-- Preco Field -->
 <div class="col-sm-12">
-    {!! Form::label('preco', 'Preco:') !!}
+    {!! Form::label('preco', 'Preço:') !!}
     <p>{{ $product->preco }}</p>
 </div>
 
@@ -24,7 +24,7 @@
 
 <!-- Category Id Field -->
 <div class="col-sm-12">
-    {!! Form::label('category_id', 'Category Id:') !!}
+    {!! Form::label('category_id', 'ID da categoria:') !!}
     <p>{{ $product->category_id }}</p>
 </div>
 

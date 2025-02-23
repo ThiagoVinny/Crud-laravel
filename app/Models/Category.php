@@ -25,5 +25,8 @@ class Category extends Model
         'updated_at' => 'nullable'
     ];
 
-    
+    public function products(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(\App\Models\Product::class, 'category_id');
+    }
 }
