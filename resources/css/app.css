@@ -1,0 +1,106 @@
+/* Estilo geral */
+body {
+    background: linear-gradient(to bottom, #ffffff, #f1f1f1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Container */
+.container {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h1, h2 {
+    color: #444;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Tabela de produtos */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.table th {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+/* Formulários */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    border-radius: 5px;
+    padding: 8px;
+}
+
+/* Botões */
+.btn {
+    border-radius: 5px;
+    padding: 8px 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+    background: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+.btn-danger {
+    background: #dc3545;
+    border: none;
+}
+
+.btn-danger:hover {
+    background: #a71d2a;
+}
+
+.btn-success {
+    background: #28a745;
+    border: none;
+}
+
+.btn-success:hover {
+    background: #1e7e34;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+}

@@ -143,6 +143,7 @@
       <path value="$PROJECT_DIR$/vendor/infyomlabs/adminlte-templates" />
       <path value="$PROJECT_DIR$/vendor/infyomlabs/laravel-ui-adminlte" />
       <path value="$PROJECT_DIR$/vendor/infyomlabs/laravel-generator-helpers" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
