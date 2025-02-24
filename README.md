@@ -109,5 +109,5 @@ Caso queira configurar autenticação para sua aplicação, crie um novo realm e
 ## 📜 Licença
 Este projeto está licenciado sob a **MIT License**.
 
-Desenvolvido com 💙 por [Thiago Vinny](https://github.com/ThiagoVinny).
+Desenvolvido por [Thiago Vinny](https://github.com/ThiagoVinny).
 
